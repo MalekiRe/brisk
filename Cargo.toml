@@ -1,0 +1,46 @@
+[package]
+name = "brisk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "stereokit-bevy",
+    "leknet",
+    "stereokit-voice-chat",
+    "stereokit-egui",
+    "stereokit-inspector",
+    "stereokit-interaction",
+    "cloudcafe",
+]
+
+[workspace.dependencies]
+stereokit = { path = "../stereokit-rs"}
+stereokit-bevy = { path = "./stereokit-bevy"}
+stereokit-voice-chat = { path = "./stereokit-voice-chat"}
+leknet = { path = "./leknet"}
+stereokit-egui = { path = "./stereokit-egui"}
+stereokit-inspector = { path = "./stereokit-inspector"}
+stereokit-interaction = { path = "./stereokit-interaction"}
+brisk = { path = "../brisk"}
+glam = { version = "0.23.0" }
+bevy_app = "0.10.1"
+bevy_ecs = "0.10.1"
+bevy_reflect = "0.10.1"
+bevy_transform = "0.10.1"
+
+[dependencies]
+stereokit = { workspace = true }
+stereokit-bevy = { workspace = true }
+stereokit-voice-chat = { workspace = true }
+leknet = { workspace = true }
+stereokit-egui = { workspace = true }
+stereokit-inspector = { workspace = true }
+glam = { workspace = true }
+stereokit-interaction = { workspace = true }
+bevy_app = { workspace = true }
+bevy_ecs = { workspace = true }
+bevy_reflect = { workspace = true }
+bevy_transform = { workspace = true }

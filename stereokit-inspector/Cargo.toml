@@ -1,0 +1,23 @@
+[package]
+name = "stereokit-inspector"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+stereokit-bevy = { workspace = true }
+stereokit = { workspace = true , features = ["bevy_ecs", "bevy_reflect"]}
+glam = { version = "0.23.0", features = ["mint"] }
+bevy_app = "0.10.1"
+bevy_ecs = "0.10.1"
+bevy_transform = "0.10.1"
+bevy_core = "0.10.1"
+bevy_hierarchy = "0.10.1"
+bevy_reflect = "0.10.1"
+rgb = "0.8.36"
+image = "0.24.6"
+const-random = "0.1.15"
+stereokit-egui = { workspace = true }
+egui = "0.22.0"
+downcast-trait = "0.1.0"
